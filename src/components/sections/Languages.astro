@@ -7,28 +7,22 @@ import Section from '../Section.astro'
 <Section title='Idiomas'>
   <ul>
     {
-      (
-        <ul>
-          {languages.map(({ language, fluency, url }) => {
-            return (
-              <li>
-                <div>
-                  <h3>{language}</h3> - <span>{fluency}</span>
-                  {url && (
-                    <a
-                      href={url}
-                      target='_blank'
-                      title={`Ver diploma del idioma ${language}`}
-                    >
-                      <Diploma />
-                    </a>
-                  )}
-                </div>
-              </li>
-            )
-          })}
-        </ul>
-      )
+      languages.map(({ language, fluency, url }) => {
+        return (
+          <li>
+            <h3>{language}</h3> - <span>{fluency}</span>
+            {url && (
+              <a
+                href={url}
+                target='_blank'
+                title={`Ver diploma del idioma ${language}`}
+              >
+                <Diploma />
+              </a>
+            )}
+          </li>
+        )
+      })
     }
   </ul>
 </Section>
@@ -40,16 +34,15 @@ import Section from '../Section.astro'
     gap: 4px;
   }
 
+  li {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
   h3 {
     display: inline-block;
     font-weight: 500;
     color: #111;
-  }
-
-  div {
-    display: flex;
-    align-items: center;
-    gap: 4px;
   }
 
   a {
