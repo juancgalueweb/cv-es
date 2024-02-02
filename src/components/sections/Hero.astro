@@ -5,7 +5,7 @@ import LinkedIn from '@/icons/LinkedIn.astro'
 import Location from '@/icons/Location.astro'
 import Mail from '@/icons/Mail.astro'
 import Phone from '@/icons/Phone.astro'
-import Portfolio from '@/icons/WorldMap.astro'
+import WebPortfolio from '@/icons/WorldMap.astro'
 import X from '@/icons/X.astro'
 import type { SocialIcon } from '@/types'
 import { basics } from '@cv'
@@ -17,13 +17,13 @@ const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
   X,
-  Portfolio
+  WebPortfolio
 }
 
 const linkedInfo = profiles.find(({ network }) => network === 'LinkedIn')
 const linkedUrl = linkedInfo?.url
 
-const portfolioInfo = profiles.find(({ network }) => network === 'Portfolio')
+const portfolioInfo = profiles.find(({ network }) => network === 'WebPortfolio')
 const portfolioUrl = portfolioInfo?.url
 
 const printInfo = [email, phone, linkedUrl, portfolioUrl]
@@ -123,7 +123,7 @@ const printInfo = [email, phone, linkedUrl, portfolioUrl]
   img {
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    width: 128px;
+    width: 148px;
     border-radius: 16px;
   }
 
