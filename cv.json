@@ -391,7 +391,8 @@
         "Next.js",
         "Typescript",
         "Tailwind CSS",
-        "Ant Design"
+        "Ant Design",
+        "plaiceholder"
       ],
       "url": "https://portfolio-juancgalueweb.vercel.app/myprojects/cocktailsdb-app",
       "github": "https://github.com/juancgalueweb/cocktailsdb-nextjs"
