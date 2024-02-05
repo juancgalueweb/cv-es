@@ -35,7 +35,7 @@ export function formatDate(startDate: string, endDate: string): string {
     })
   }
 
-  endingDateToShow = endDate != null ? endingDate : 'Current'
+  endingDateToShow = endDate != null ? endingDate : 'Actual'
   const years = `${startingDateToShow} / ${endingDateToShow}`
   return years
 }
